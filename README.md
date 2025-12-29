@@ -12,3 +12,8 @@ Train an agent that reliably clears unseen Mario levels while an adversarial gen
 
 ### Setting
 Two-player minimax game between Agent (policy) and Generator (level distribution). Success means robust play across a broad, shifting set of levels.
+
+### Tools and approach sketch
+- Environment: Mario simulator (gym-super-mario-bros or similar)
+- Generator: adversarial PCGRL-style loop (e.g. https://github.com/amidos2006/gym-pcgrl)
+- Agent: RL policy (PPO / IMPALA) with reward shaping for various goals
